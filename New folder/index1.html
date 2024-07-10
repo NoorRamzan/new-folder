@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //callback 1
+      // function calculate(){
+      //     console.log('This is for calculate')
+      // }
+      // function first(a,b){
+      //     function first(a,b){
+      //     console.log('this is for first')
+      //     calculate()
+      //    }
+      //     console.log(a)
+      //     console.log(b)
+      // }
+
+      // first(1,2);
+
+      // callback in setTimeOut ex 2
+
+      //  function getData(data){
+      //      setTimeout( ()=>{
+      //          console.log(data)
+      //          console.log('helo world')
+      //     },3000)
+      //  }
+
+      //  function getValue(){
+      //     console.log('pakistan')
+      //  }
+      //  getData(2)
+      //  getData(3)
+      //  getData(4)
+      //  getValue()
+
+      // ex 3
+      // function helo(){
+      //     setTimeout( helo => {
+      //         console.log('helo world')
+      //     }, 3000);
+
+      // }
+
+      // function goodBye(){
+      //     console.log('good Bye!')
+      // }
+      // helo()
+      // goodBye()
+
+      // ex 4
+      // function getValue(first){
+      //   console.log('value is')
+      //   first()
+      // }
+      // getValue(()=>{
+      //     console.log('first')
+      // })
+
+      // callback hell
+    //   function getDay(value, nextFun) {
+    //     setTimeout(() => {
+    //       console.log(`day no ${value}`);
+
+    //       nextFun();
+    //     }, 2000);
+    //   }
+    //   getDay(1, () => {
+    //     console.log("first day ....");
+    //     getDay(2, () => {
+    //       console.log("second day...");
+    //       getDay(3, () => {
+    //         console.log("third day...");
+    //         getDay(4, () => {
+    //           console.log("fourth day...");
+    //         });
+    //       });
+    //     });
+    //   });
+
+     // promise 
+     // ex 1
+    //  const data = new Promise((resolve,reject)=>{
+    //      console.log('this is promise')
+    //      reject('this is resovle')
+    //  })
+
+    // ex 2
+    //  const newData= new Promise((resolve,reject)=>{
+    //     console.log('promise is pending')
+     
+    //  setTimeout(()=>{
+    //   console.log('promise is successful')
+    //   //reject('error')
+    //  },2000);
+
+    // })
+      // function getValue(first){
+      //     // console.log("value is")
+      //     first()
+      // }
+      // getValue(()=>{
+      // console.log('first')
+      // })
+
+      // function getDay(value,nextFun){
+
+      // }
+      // getDay(()=>{
+
+      // })
+
+      // promise
+          // const  newData= new Promise((resolve,reject)=>{
+          //      console.log('this is promise is resolve')
+          //    setTimeout(()=>{
+          //    // console.log('this promise is successful')
+          //    reject('success')
+          //    },5000);
+          // })
+
+
+          // .then ==> pending to fullfilled
+          // .catch ==> pending to error
+          // newData.then((res)=>{
+          //   console.log('here is my data')
+          // })
+          // newData.catch((res)=>{
+          //  console.log('here is my error')
+          // })
+      // state ==> (pending),(fullfilled), (rejected)
+      // handler ==> reslove,reject
+
+  // fetch
+      // const dataPack = fetch('https://fakestoreapi.com/products/1')
+      // dataPack.then((res)=>{
+      //   console.log(res)
+      // })
+      // dataPack.catch((err)=>{
+      //   console.log(err)
+      // });
+
+      // example
+      // function getDay(value){
+      //   return new Promise((resolve, reject) => {
+      //     setTimeout(()=>{
+      //       console.log(`day no ${value}`)
+      //       resolve('pakistan')
+      //     },2000);
+      //   })
+      // }console.log('first day ....')
+      // getDay(1)
+      // .then((res)=>{return getDay(2)})
+      // .then((res)=>{return getDay(3)})
+      // .then((res)=>{return getDay(4)})
+      // .then((res)=>{return getDay(5)})
+      // .then((res)=>{return getDay(6)})
+      // .then((res)=>{return getDay(7)})
+      // .then((res)=>{console.log(res)})
+
+    </script>
+  </body>
+</html>
